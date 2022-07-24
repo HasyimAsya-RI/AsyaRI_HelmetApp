@@ -1,0 +1,67 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "wrap_content"
+    android:layout_margin   = "6dp">
+
+    <RelativeLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "175dp"
+        android:layout_margin       = "5dp"
+        android:padding             = "5dp">
+        <TextView
+            android:id                  = "@+id/txt_helmId"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:text                = "1"
+            android:visibility          = "invisible" />
+        <!-- Helm Image and Name -->
+        <ImageView
+            android:id                  = "@+id/img_helmImage"
+            android:layout_width        = "80dp"
+            android:layout_height       = "80dp"
+            android:src                 = "@drawable/helm_right"
+            android:layout_alignParentLeft      = "true"
+            android:layout_alignParentRight     = "true" />
+        <TextView
+            android:id                  = "@+id/txt_helmName"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            android:layout_below        = "@id/img_helmImage"
+            android:gravity             = "center"
+            android:text                = "Helm Anti Tilang"
+            android:textStyle           = "bold"
+            android:textColor           = "#2b2e37" />
+
+        <!-- Helm Price -->
+        <TextView
+            android:id                  = "@+id/txt_currecyName"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:layout_marginBottom = "2dp"
+            android:text                = "Rp"
+            android:textColor           = "#2b2e37"
+            android:layout_alignParentLeft      = "true"
+            android:layout_alignParentBottom    = "true" />
+        <TextView
+            android:id                  = "@+id/txt_helmPrice"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:layout_marginBottom = "2dp"
+            android:text                = "Harga Helm"
+            android:textColor           = "#2b2e37"
+            android:layout_toRightOf    = "@id/txt_currecyName"
+            android:layout_alignParentBottom    = "true" />
+        <!-- Button: Buy -->
+        <Button
+            android:id                  = "@+id/btn_buy"
+            android:layout_width        = "24dp"
+            android:layout_height       = "24dp"
+            android:background          = "@drawable/ic_add_24"
+            android:layout_alignParentRight     = "true"
+            android:layout_alignParentBottom    = "true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

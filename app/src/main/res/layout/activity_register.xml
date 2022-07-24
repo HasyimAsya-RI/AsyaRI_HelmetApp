@@ -1,0 +1,142 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:background      = "@drawable/bg"
+    android:orientation     = "vertical"
+    tools:context           = ".RegisterActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "50dp"
+        android:gravity             = "center_vertical"
+        android:background          = "#fed900"
+        android:orientation         = "horizontal">
+        <ImageView
+            android:onClick             = "back_toLogin"
+            tools:ignore                = "OnClick"
+            android:layout_width        = "30dp"
+            android:layout_height       = "30dp"
+            android:layout_marginLeft   = "15dp"
+            android:src                 = "@drawable/ic_arrow_back_24" />
+        <TextView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginLeft   = "15dp"
+            android:layout_marginRight  = "25dp"
+            android:text                = "Buat Akun Baru"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
+    </LinearLayout>
+
+    <!-- Input: Email -->
+    <TextView
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "50dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:text                = "Masukkan email:"
+        android:textSize            = "16dp"
+        android:textColor           = "@color/white" />
+    <EditText
+        android:id                  = "@+id/txtEdit_email"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "40dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:inputType           = "textEmailAddress"
+        android:hint                = "Email"
+        android:textSize            = "14dp"
+        android:paddingStart        = "15dp"
+        android:background          = "@color/white" />
+    <!-- Input: Name -->
+    <TextView
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "15dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:text                = "Masukkan nama:"
+        android:textSize            = "16dp"
+        android:textColor           = "@color/white" />
+    <EditText
+        android:id                  = "@+id/txtEdit_name"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "40dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:hint                = "Nama Lengkap"
+        android:textSize            = "14dp"
+        android:paddingStart        = "15dp"
+        android:background          = "@color/white" />
+    <!-- Input: Address -->
+    <TextView
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "15dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:text                = "Masukkan alamat:"
+        android:textSize            = "16dp"
+        android:textColor           = "@color/white" />
+    <EditText
+        android:id                  = "@+id/txtEdit_address"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "40dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:hint                = "Alamat"
+        android:textSize            = "14dp"
+        android:paddingStart        = "15dp"
+        android:background          = "@color/white" />
+    <!-- Input: Password -->
+    <TextView
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "15dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:text                = "Masukkan kata Sandi"
+        android:textSize            = "16dp"
+        android:textColor           = "@color/white" />
+    <EditText
+        android:id                  = "@+id/txtEdit_password"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "40dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:inputType           = "textPassword"
+        android:hint                = "Kata sandi"
+        android:textSize            = "14dp"
+        android:paddingStart        = "15dp"
+        android:background          = "@color/white" />
+
+    <!-- Button: Register -->
+    <RelativeLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "25dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp">
+        <Button
+            android:id                  = "@+id/btn_register"
+            android:layout_width        = "125dp"
+            android:layout_height       = "50dp"
+            android:text                = "Daftar"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black"
+            app:cornerRadius            = "50dp"
+            android:backgroundTint      = "#fed900"
+            android:layout_alignParentRight     = "true" />
+    </RelativeLayout>
+</LinearLayout>

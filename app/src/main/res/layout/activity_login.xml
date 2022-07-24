@@ -1,0 +1,91 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:background      = "@drawable/bg"
+    android:orientation     = "vertical"
+    tools:context           = ".LoginActivity">
+
+    <!-- AsyaRI Logo -->
+    <ImageView
+        android:layout_width        = "match_parent"
+        android:layout_height       = "75dp"
+        android:layout_marginTop    = "150dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:src                 = "@drawable/logo" />
+
+    <!-- Input: Email -->
+    <EditText
+        android:id                  = "@+id/txtEdit_email"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "50dp"
+        android:layout_marginTop    = "75dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:inputType           = "textEmailAddress"
+        android:hint                = "Email"
+        android:textSize            = "14dp"
+        android:paddingStart        = "15dp"
+        android:background          = "@drawable/bgedittext" />
+    <!-- Input: Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "50dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        app:passwordToggleEnabled   = "true">
+        <EditText
+            android:id                  = "@+id/txtEdit_password"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent"
+            android:inputType           = "textPassword"
+            android:hint                = "Kata Sandi"
+            android:textSize            = "14dp"
+            android:paddingStart        = "15dp"
+            android:background          = "@drawable/bgedittext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button: Login -->
+    <Button
+        android:id                  = "@+id/btn_login"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "60dp"
+        android:layout_marginTop    = "10dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:text                = "Masuk"
+        android:textStyle           = "bold"
+        android:textColor           = "@color/black"
+        android:backgroundTint      = "#fed900"
+        app:cornerRadius            = "150dp" />
+    <RelativeLayout
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "15dp"
+        android:layout_marginLeft   = "25dp"
+        android:layout_marginRight  = "25dp"
+        android:orientation         = "horizontal">
+        <!-- Register -->
+        <TextView
+            android:onClick             = "register"
+            tools:ignore                = "OnClick"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:text                = "Daftar Sekarang"
+            android:textColor           = "@color/white" />
+        <!-- Forgot Password -->
+        <TextView
+            android:onClick             = "forgot"
+            tools:ignore                = "OnClick"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:text                = "Lupa Kata Sandi"
+            android:textColor           = "@color/white"
+            android:layout_alignParentRight     = "true" />
+    </RelativeLayout>
+</LinearLayout>

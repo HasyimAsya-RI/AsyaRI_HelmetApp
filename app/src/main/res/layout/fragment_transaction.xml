@@ -1,0 +1,143 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<FrameLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:background      = "#e1e0e5"
+    tools:context           = ".ui.transaction.TransactionFragment">
+
+    <RelativeLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "match_parent">
+        <!-- Payment Details -->
+        <TextView
+            android:id                  = "@+id/txt_paymentDetails"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "25dp"
+            android:layout_marginLeft   = "25dp"
+            android:layout_marginRight  = "25dp"
+            android:text                = "Detail Pembayaran"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
+        <ScrollView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent"
+            android:layout_marginTop    = "20dp"
+            android:layout_marginLeft   = "25dp"
+            android:layout_marginRight  = "25dp"
+            android:layout_marginBottom = "20dp"
+            android:layout_below        = "@id/txt_paymentDetails"
+            android:layout_above        = "@+id/paymentSummary">
+            <LinearLayout
+                android:layout_width        = "match_parent"
+                android:layout_height       = "match_parent"
+                android:orientation         = "vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id              = "@+id/rView_transaction"
+                    android:layout_width    = "match_parent"
+                    android:layout_height   = "match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id                  = "@+id/paymentSummary"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginLeft   = "25dp"
+            android:layout_marginRight  = "25dp"
+            android:layout_marginBottom = "25dp"
+            android:orientation         = "vertical"
+            android:layout_alignParentBottom    = "true">
+            <!-- Paymeny Summary -->
+            <TextView
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:text                = "Ringkasan Pembayaran"
+                android:textSize            = "20dp"
+                android:textStyle           = "bold"
+                android:textColor           = "@color/black" />
+            <RelativeLayout
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginTop    = "20dp">
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Subtotal untuk Helm" />
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Rp"
+                    android:layout_toLeftOf     = "@id/txt_order" />
+                <TextView
+                    android:id                  = "@+id/txt_order"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "20.12.1832"
+                    android:layout_alignParentRight     = "true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginTop    = "5dp">
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Diskon 45% AsyaRI" />
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "-Rp"
+                    android:layout_toLeftOf     = "@id/txt_discount" />
+                <TextView
+                    android:id                  = "@+id/txt_discount"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "20.12.1832"
+                    android:layout_alignParentRight     = "true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginTop    = "10dp">
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Total Pembayaran"
+                    android:textSize            = "18dp"
+                    android:textColor           = "@color/black" />
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Rp"
+                    android:textSize            = "18dp"
+                    android:textColor           = "@color/black"
+                    android:layout_toLeftOf     = "@id/txt_total" />
+                <TextView
+                    android:id                  = "@+id/txt_total"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "20.12.1832"
+                    android:textSize            = "18dp"
+                    android:textColor           = "@color/black"
+                    android:layout_alignParentRight     = "true" />
+            </RelativeLayout>
+
+            <!-- Button: Continue -->
+            <Button
+                android:id                  = "@+id/btn_payment"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginTop    = "20dp"
+                android:text                = "Lanjutkan Pembayaran"
+                android:textAllCaps         = "false"
+                android:textStyle           = "bold"
+                android:textColor           = "@color/black"
+                android:backgroundTint      = "#fed900"
+                android:layout_alignParentBottom        = "true" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
