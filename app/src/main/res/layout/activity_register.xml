@@ -137,6 +137,6 @@
             android:textColor           = "@color/black"
             app:cornerRadius            = "50dp"
             android:backgroundTint      = "#fed900"
-            android:layout_alignParentRight     = "true" />
+            android:layout_alignParentRight         = "true" />
     </RelativeLayout>
 </LinearLayout>

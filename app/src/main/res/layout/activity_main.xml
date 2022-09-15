@@ -22,5 +22,5 @@
         android:background          = "#fed900"
         app:menu                    = "@menu/bottom_navigation"
         app:itemIconTint            = "@color/black"
-        android:layout_alignParentBottom    = "true" />
+        android:layout_alignParentBottom        = "true" />
 </RelativeLayout>

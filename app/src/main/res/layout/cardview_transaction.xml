@@ -23,8 +23,8 @@
             android:layout_width        = "80dp"
             android:layout_height       = "80dp"
             android:src                 = "@drawable/helm_right"
-            android:layout_alignParentTop       = "true"
-            android:layout_alignParentBottom    = "true" />
+            android:layout_alignParentTop           = "true"
+            android:layout_alignParentBottom        = "true" />
 
         <!-- Helm Price and Name -->
         <TextView
@@ -66,7 +66,7 @@
             android:layout_marginLeft   = "15dp"
             android:src                 = "@drawable/ic_remove_24"
             android:layout_toRightOf    = "@id/img_helmImage"
-            android:layout_alignParentBottom    = "true" />
+            android:layout_alignParentBottom        = "true" />
         <TextView
             android:id                  = "@+id/txt_helmAmount"
             android:layout_width        = "wrap_content"
@@ -78,14 +78,14 @@
             android:textStyle           = "bold"
             android:textColor           = "#2b2e37"
             android:layout_toRightOf    = "@id/img_helmRemove"
-            android:layout_alignParentBottom    = "true" />
+            android:layout_alignParentBottom        = "true" />
         <ImageView
             android:id                  = "@+id/img_helmAdd"
             android:layout_width        = "wrap_content"
             android:layout_height       = "wrap_content"
             android:src                 = "@drawable/ic_add_24"
             android:layout_toRightOf    = "@id/txt_helmAmount"
-            android:layout_alignParentBottom    = "true" />
+            android:layout_alignParentBottom        = "true" />
 
         <!-- Button: Delete -->
         <Button
@@ -94,7 +94,7 @@
             android:layout_height       = "24dp"
             android:layout_marginBottom = "6dp"
             android:background          = "@drawable/ic_delete_24"
-            android:layout_alignParentRight     = "true"
-            android:layout_alignParentBottom    = "true" />
+            android:layout_alignParentRight         = "true"
+            android:layout_alignParentBottom        = "true" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

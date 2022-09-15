@@ -86,6 +86,6 @@
             android:layout_height       = "wrap_content"
             android:text                = "Lupa Kata Sandi"
             android:textColor           = "@color/white"
-            android:layout_alignParentRight     = "true" />
+            android:layout_alignParentRight         = "true" />
     </RelativeLayout>
 </LinearLayout>

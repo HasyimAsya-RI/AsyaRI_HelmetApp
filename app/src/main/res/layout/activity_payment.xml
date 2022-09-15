@@ -83,7 +83,7 @@
             android:layout_height       = "wrap_content"
             android:text                = "Sisa Kembalian"
             android:textColor           = "@color/black"
-            android:layout_alignParentLeft      = "true" />
+            android:layout_alignParentLeft          = "true" />
         <TextView
             android:layout_width        = "wrap_content"
             android:layout_height       = "wrap_content"
@@ -96,6 +96,6 @@
             android:layout_height       = "wrap_content"
             android:text                = "100"
             android:textColor           = "@color/black"
-            android:layout_alignParentRight     = "true" />
+            android:layout_alignParentRight         = "true" />
     </RelativeLayout>
 </LinearLayout>

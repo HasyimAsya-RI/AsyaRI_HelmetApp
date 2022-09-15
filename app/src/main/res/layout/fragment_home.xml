@@ -49,7 +49,7 @@
                 android:layout_marginTop    = "64dp"
                 android:layout_marginRight  = "25dp"
                 android:src                 = "@drawable/ic_notifications_24"
-                android:layout_alignParentRight     = "true" />
+                android:layout_alignParentRight         = "true" />
         </RelativeLayout>
 
         <ScrollView

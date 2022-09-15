@@ -71,6 +71,6 @@
             android:textColor           = "@color/black"
             android:backgroundTint      = "#fed900"
             app:cornerRadius            = "50dp"
-            android:layout_alignParentRight     = "true" />
+            android:layout_alignParentRight         = "true" />
     </RelativeLayout>
 </LinearLayout>
